@@ -1,241 +1,158 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Ruby on Rails: Welcome aboard</title>
-    <style type="text/css" media="screen">
-      body {
-        margin: 0;
-        margin-bottom: 25px;
-        padding: 0;
-        background-color: #f0f0f0;
-        font-family: "Lucida Grande", "Bitstream Vera Sans", "Verdana";
-        font-size: 13px;
-        color: #333;
-      }
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Border &amp; Radius Brewhouse - Great Food, Better Beer</title>
+<link href="style.css" rel="stylesheet" />
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> 
+<![endif]-->
+</head>
 
-      h1 {
-        font-size: 28px;
-        color: #000;
-      }
+<body>
 
-      a  {color: #03c}
-      a:hover {
-        background-color: #03c;
-        color: white;
-        text-decoration: none;
-      }
+<div id="wrap">
+<!-- BEGIN HEADER -->
+	<header id="main">
+		<a href="#" id="better-beer"></a>
+		<h1 class="texthide"><a href="#" id="logo">Border &amp; Radius Brewhouse</a></h1>
+		<a href="#" id="menu-promo"></a>
+	</header>	
+<!-- END HEADER -->
 
+<!-- BEGIN NAVIGATION -->		
+		<nav id="primary">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Food</a></li>
+				<li><a href="#">Beer</a></li>
+				<li><a href="#">Catering</a></li>
+				<li><a href="#">Locations</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+<!-- END NAVIGATION -->		
 
-      #page {
-        background-color: #f0f0f0;
-        width: 750px;
-        margin: 0;
-        margin-left: auto;
-        margin-right: auto;
-      }
+<!-- BEGIN PROMO SECTION -->
+	<section id="promotional">
+		<img src="images/featured.jpg" alt="Awesome Beer Image">
+		<div id="selections">
+			<ul>
+				<li>Beers <em>on</em> Tap <span>35</span></li>
+				<li class="bottle">Bottle Selections <span>150</span></li>
+				<li>Beers Brewed <em>on</em> Site <span>8</span></li>
+			</ul>
+		</div>
+		
+		<a href="#" class="menu">View Our <span>Food</span> Menu</a>
+		<a href="#" class="menu">View Our <span>Beer</span> Menu</a>
+	
+	</section>
+<!-- END PROMO SECTION -->
 
-      #content {
-        float: left;
-        background-color: white;
-        border: 3px solid #aaa;
-        border-top: none;
-        padding: 25px;
-        width: 500px;
-      }
+<!-- BEGIN BLOCKS -->	
+	<div id="blocks">
+		<!-- BEGIN LATEST NEWS -->
+		<section id="news" class="box">
+			<header><h1 class="script">Latest News</h1></header>
+			<article class="news-item">
+				<header>
+					<h1><a href="#">Border &amp; Radius Named to City's Best List</a></h1>
+				</header>	
+					<p><time datetime="2011-01-26" pubdate>Monday, January 26, 2011</time> | <span class="via">via</span> <a href="#">The Newspaper</a></p>
+			</article>
+			<article class="news-item">
+				<header>
+					<h1><a href="#">Another Newsworthy Item Goes Here</a></h1>
+				</header>	
+					<p><time datetime="2011-01-26" pubdate>Monday, January 26, 2011</time> | <span class="via">via</span> <a href="#">The Newspaper</a></p>
+			</article>
+			<article class="news-item">
+				<header>
+					<h1><a href="#">Hey Look, We're In The News Again</a></h1>
+				</header>	
+					<p><time datetime="2011-01-26" pubdate>Monday, January 26, 2011</time> | <span class="via">via</span> <a href="#">The Newspaper</a></p>
+			</article>
+			<article class="news-item">
+				<header>
+					<h1><a href="#">I'll Have a Pint of Guinness Please</a></h1>
+				</header>	
+					<p><time datetime="2011-01-26" pubdate>Monday, January 26, 2011</time> | <span class="via">via</span> <a href="#">The Newspaper</a></p>
+			</article>		
+		</section>
+		<!-- END LATEST NEWS -->
+		
+		<!-- BEGIN SPECIALS -->
+		<section id="specials" class="box">
+			<header><h1 class="script">Current Specials</h1></header>
+				<a href="#"><img class="price" src="images/price.png" alt="Price Image"></a>
+				<p>Order anything off the lunch menu and pair it with any one of our beers on tap for just $7.77 during lunch hours (11.30p - 2p)</p>
+		</section>
+		<!-- END SPECIALS -->
+		
+		<!-- BEGIN NEWSLETTER -->
+		<section id="newsletter" class="box box-right">
+			<header><h1 class="script">Email Newsletter</h1></header>
+				<form id="sign-up"> 
+					<fieldset>
+						<label for="news-name">Name</label>
+						<input type="text" id="news-name" placeholder="What Shall We Call You" required /> 
+					</fieldset>
+					<fieldset> 
+						<label for="news-email">Email</label> 
+						<input type="email" id="news-email" placeholder="e.g. beerme@aol.com" required />
+					</fieldset>
+					<fieldset> 
+						<input type="submit" value="Subscribe" />
+					</fieldset> 
+				</form>
+		</section>
+		<!-- END NEWSLETTER -->
+	
+	</div>
+<!-- END BLOCKS -->	
+	
+<!-- BEGIN FOOTER -->	
+	<footer id="primary-foot">
+		<section id="history">
+			<header><h1>Our History</h1></header>
+			<p>We have a pretty awesome story about how we came to be. It all started a long time ago, in a brewery far far away. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br /> 
+			<a href="#">Read More</a></p>
+		</section>
+		
+		<section id="info">
+			<nav id="footer-nav">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Cases</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">Clients</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>	
+			<div class="copyright">
+  			<div id="beer-bottle">
+  				 <div id="bottle">
+  				    <div id="contents"></div>
+  				    <div id="outline"></div>
+  				 </div>
+  				 <div id="pour"><div></div></div>
+  				 <div id="drip"></div>
+  				 <div id="puddle"></div>
+  			</div>
+			
+  			<p>&copy; 2011 Codeschool.com, A Division of Envy Labs<br />
+  			This is a fictional case study, although the author does enjoy great food and better beer.</p>
+			</div>
+		</section>
+	
+	</footer>
+<!-- END FOOTER -->	
 
-      #sidebar {
-        float: right;
-        width: 175px;
-      }
+</div>
 
-      #footer {
-        clear: both;
-      }
+</body>
 
-      #header, #about, #getting-started {
-        padding-left: 75px;
-        padding-right: 30px;
-      }
-
-
-      #header {
-        background-image: url("/assets/rails.png");
-        background-repeat: no-repeat;
-        background-position: top left;
-        height: 64px;
-      }
-      #header h1, #header h2 {margin: 0}
-      #header h2 {
-        color: #888;
-        font-weight: normal;
-        font-size: 16px;
-      }
-
-
-      #about h3 {
-        margin: 0;
-        margin-bottom: 10px;
-        font-size: 14px;
-      }
-
-      #about-content {
-        background-color: #ffd;
-        border: 1px solid #fc0;
-        margin-left: -55px;
-        margin-right: -10px;
-      }
-      #about-content table {
-        margin-top: 10px;
-        margin-bottom: 10px;
-        font-size: 11px;
-        border-collapse: collapse;
-      }
-      #about-content td {
-        padding: 10px;
-        padding-top: 3px;
-        padding-bottom: 3px;
-      }
-      #about-content td.name  {color: #555}
-      #about-content td.value {color: #000}
-
-      #about-content ul {
-        padding: 0;
-        list-style-type: none;
-      }
-
-      #about-content.failure {
-        background-color: #fcc;
-        border: 1px solid #f00;
-      }
-      #about-content.failure p {
-        margin: 0;
-        padding: 10px;
-      }
-
-
-      #getting-started {
-        border-top: 1px solid #ccc;
-        margin-top: 25px;
-        padding-top: 15px;
-      }
-      #getting-started h1 {
-        margin: 0;
-        font-size: 20px;
-      }
-      #getting-started h2 {
-        margin: 0;
-        font-size: 14px;
-        font-weight: normal;
-        color: #333;
-        margin-bottom: 25px;
-      }
-      #getting-started ol {
-        margin-left: 0;
-        padding-left: 0;
-      }
-      #getting-started li {
-        font-size: 18px;
-        color: #888;
-        margin-bottom: 25px;
-      }
-      #getting-started li h2 {
-        margin: 0;
-        font-weight: normal;
-        font-size: 18px;
-        color: #333;
-      }
-      #getting-started li p {
-        color: #555;
-        font-size: 13px;
-      }
-
-
-      #sidebar ul {
-        margin-left: 0;
-        padding-left: 0;
-      }
-      #sidebar ul h3 {
-        margin-top: 25px;
-        font-size: 16px;
-        padding-bottom: 10px;
-        border-bottom: 1px solid #ccc;
-      }
-      #sidebar li {
-        list-style-type: none;
-      }
-      #sidebar ul.links li {
-        margin-bottom: 5px;
-      }
-
-      .filename {
-        font-style: italic;
-      }
-    </style>
-    <script type="text/javascript">
-      function about() {
-        info = document.getElementById('about-content');
-        if (window.XMLHttpRequest)
-          { xhr = new XMLHttpRequest(); }
-        else
-          { xhr = new ActiveXObject("Microsoft.XMLHTTP"); }
-        xhr.open("GET","rails/info/properties",false);
-        xhr.send("");
-        info.innerHTML = xhr.responseText;
-        info.style.display = 'block'
-      }
-    </script>
-  </head>
-  <body>
-    <div id="page">
-      <div id="sidebar">
-        <ul id="sidebar-items">
-          <li>
-            <h3>Browse the documentation</h3>
-            <ul class="links">
-              <li><a href="http://guides.rubyonrails.org/">Rails Guides</a></li>
-              <li><a href="http://api.rubyonrails.org/">Rails API</a></li>
-              <li><a href="http://www.ruby-doc.org/core/">Ruby core</a></li>
-              <li><a href="http://www.ruby-doc.org/stdlib/">Ruby standard library</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-
-      <div id="content">
-        <div id="header">
-          <h1>Welcome aboard</h1>
-          <h2>You&rsquo;re riding Ruby on Rails!</h2>
-        </div>
-
-        <div id="about">
-          <h3><a href="rails/info/properties" onclick="about(); return false">About your application&rsquo;s environment</a></h3>
-          <div id="about-content" style="display: none"></div>
-        </div>
-
-        <div id="getting-started">
-          <h1>Getting started</h1>
-          <h2>Here&rsquo;s how to get rolling:</h2>
-
-          <ol>
-            <li>
-              <h2>Use <code>rails generate</code> to create your models and controllers</h2>
-              <p>To see all available options, run it without parameters.</p>
-            </li>
-
-            <li>
-              <h2>Set up a default route and remove <span class="filename">public/index.html</span></h2>
-              <p>Routes are set up in <span class="filename">config/routes.rb</span>.</p>
-            </li>
-
-            <li>
-              <h2>Create your database</h2>
-              <p>Run <code>rake db:create</code> to create your database. If you're not using SQLite (the default), edit <span class="filename">config/database.yml</span> with your username and password.</p>
-            </li>
-          </ol>
-        </div>
-      </div>
-
-      <div id="footer">&nbsp;</div>
-    </div>
-  </body>
 </html>
